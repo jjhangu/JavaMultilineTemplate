@@ -9,8 +9,11 @@ public class Main {
 		map.put("name", "david");
 		map.put("age", "15");
 		map.put("black", "red");
-		String converted = HtmlCovertToString.getConvertedString("D:\\app\\tool\\eclipse-kepler-server\\workspace\\JavaMultilineTemplate\\src\\com\\sanghwa\\multiline\\test.html", map);
+		String converted = HtmlCovertToString.getConvertedString(System.getProperty("user.dir")+"/src/com/sanghwa/multiline/"+"test.html", map);
 		System.out.println("################ ChangedAfter ############");
 		System.out.println(converted);
+		
+		
+		
 	}
 }
